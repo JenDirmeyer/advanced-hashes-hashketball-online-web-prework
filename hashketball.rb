@@ -215,7 +215,7 @@ def big_shoe_rebounds
     team_info.each do |info_types, info|
       if info_types == :players
         info.each do |players, categories|
-          shoe_size << categories.fetch_values(:shoe)
+          shoe_size << categories[:shoe]
         end
       end
     end
