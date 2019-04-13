@@ -210,6 +210,7 @@ end
 
 def big_shoe_rebounds
   shoe_size = []
+  largest = ()
   game_hash.each do |side, team_info|
     team_info.each do |info_types, info|
       if info_types == :players
@@ -219,7 +220,8 @@ def big_shoe_rebounds
       end
     end
   end
-  shoe_size
+  largest = shoe_size.sort.first 
+  binding.pry
 end  
       
  
