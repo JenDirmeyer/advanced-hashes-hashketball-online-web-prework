@@ -227,7 +227,7 @@ def big_shoe_rebounds
       if info_types == :players
         info.each do |players, categories|
             if categories[:shoe] == largest 
-              categories[:rebounds]
+            return  categories[:rebounds]
           end  
         end
       end
