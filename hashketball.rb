@@ -197,8 +197,8 @@ def player_stats(player_name)
   stats=[]
   game_hash.each do |side, team_info|
     team_info.each do |info_types, info|
-      binding.pry
       if info_types == :players
+        binding.pry
         info.fetch_values(player_name)
       end
     end  
