@@ -220,7 +220,7 @@ def big_shoe_rebounds
       end
     end
   end
-  largest = shoe_size.sort.first 
+  largest = shoe_size.sort.last 
   binding.pry
 end  
       
