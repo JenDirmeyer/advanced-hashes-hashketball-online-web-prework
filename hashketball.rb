@@ -199,8 +199,9 @@ def player_stats(player_name)
     team_info.each do |info_types, info|
       if info_types == :players
         info.each do |players, categories|
-        
-
+      end
+    end  
+  end
 end      
         
       
