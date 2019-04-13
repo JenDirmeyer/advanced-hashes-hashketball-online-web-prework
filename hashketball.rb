@@ -230,7 +230,7 @@ def big_shoe_rebounds
               binding.pry
               players  
               
-            end
+            
           end  
         end
       end
