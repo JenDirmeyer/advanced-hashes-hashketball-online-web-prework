@@ -200,7 +200,7 @@ def player_stats(player_name)
       if info.include?(player_name)
       if info_types == :players
         binding.pry
-        stats= info.fetch_values(player_name)
+        stats= info.fetch_values(player_name).to_s.slice(1..-2)
       end
       return stats
     end  
