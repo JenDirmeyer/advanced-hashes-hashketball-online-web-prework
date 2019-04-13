@@ -222,7 +222,7 @@ def big_shoe_rebounds
   end
   largest = shoe_size.sort.last 
   
-  game_has.each do |side, team_info|
+  game_hash.each do |side, team_info|
     team_info.each do |info_types, info|
       if info_types == :players
         info.each do |players, categories|
