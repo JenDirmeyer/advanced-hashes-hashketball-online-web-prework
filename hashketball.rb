@@ -199,7 +199,6 @@ def player_stats(player_name)
     team_info.each do |info_types, info|
       if info.include?(player_name)
       if info_types == :players
-        binding.pry
         info.fetch_values(player_name)
       end
     end  
