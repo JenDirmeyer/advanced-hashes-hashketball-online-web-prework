@@ -198,7 +198,8 @@ def player_stats(player_name)
   game_hash.each do |side, team_info|
     team_info.each do |info_types, info|
       if info.include?(player_name)
-      if info_types == :players
+      
+      
         stats = info[player_name]
       end
       return stats
@@ -209,7 +210,12 @@ end
 
 def big_shoe_rebounds
   shoe_size = []
-  
-      
+  game_hash.each do |side, team_info|
+    team_info.each do |info_types, info|
+      if info_types == :players
+        info.each do |players, categories|
+          binding.pry
+          shoe_size << categories.fetch_values(:shoe)
+          
       
  
