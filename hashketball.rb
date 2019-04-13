@@ -177,7 +177,6 @@ def player_numbers(team)
   game_hash.each do |side, team_info|
     
     team_info.each do |info_types, info|
-       binding.pry
       if team_info.values_at(:team_name).to_s.slice(2..-3) == team
         if info_types == :players
         info.each do |players, categories|
