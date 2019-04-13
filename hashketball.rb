@@ -216,6 +216,10 @@ def big_shoe_rebounds
         info.each do |players, categories|
           binding.pry
           shoe_size << categories.fetch_values(:shoe)
-          
+        end
+      end
+    end
+  end
+end  
       
  
