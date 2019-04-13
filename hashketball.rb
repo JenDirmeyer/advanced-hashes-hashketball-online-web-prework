@@ -202,9 +202,9 @@ def player_stats(player_name)
         stats = info[player_name]
       end
       return stats
-    end  
-  end
-end      
+      end  
+    end
+  end      
 end      
 
       
