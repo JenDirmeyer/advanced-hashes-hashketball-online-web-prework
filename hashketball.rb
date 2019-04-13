@@ -227,7 +227,7 @@ def big_shoe_rebounds
       if info_types == :players
         info.each do |players, categories|
            binding.pry
-          #players.each do |cats, stats|
+            categories.each do |cats, stats|
             players.key(largest)
            
           #end  
