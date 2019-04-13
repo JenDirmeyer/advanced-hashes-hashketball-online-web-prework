@@ -195,7 +195,11 @@ end
       
 
 def player_stats(player_name)
-  stats=
+  stats=[]
+  game_hash.each do |side, team_info|
+    team_info.each do |info_types, info|
+      info.each do |players, categories|
+        
 
 end      
         
